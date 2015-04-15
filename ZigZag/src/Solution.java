@@ -54,6 +54,5 @@ public class Solution {
 		for(String s : inputs){
 			System.out.println("convert("+s+", " + NUM_ROWS + "): " + sol.convert(s,NUM_ROWS));
 		}
-		
 	}
 }
