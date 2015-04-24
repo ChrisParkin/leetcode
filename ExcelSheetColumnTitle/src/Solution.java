@@ -7,11 +7,10 @@ public class Solution {
 			if(n % 26 == 0){
 				result.append('Z');
 				n = n / 26 - 1;
-				continue;
 			}else{
-				result.append((char)('A' + n%26 - 1));
+				result.append((char)(n % 26 + 'A' - 1));
+				n = n / 26;
 			}
-			n = n / 26;
 		}
 		return result.reverse().toString();
     }
